@@ -1,0 +1,87 @@
+* {
+    font-family: 'Font2', sans-serif;
+    font-size: calc(1.0625vh);
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    font-weight: normal;
+    pointer-events: none;
+}
+
+.chat-window {
+    background: inherit !important;
+    overflow: hidden;
+    max-height: 80vh;
+    scrollbar-width: none;
+}
+
+.chat-window::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Font2';
+    src: url(https://runtime.fivem.net/temp/ChaletLondonNineteenSixty.otf?a);
+}
+
+@font-face {
+    font-family: 'Font2_cond';
+    src: url(https://runtime.fivem.net/temp/chaletcomprime-colognesixty-webfont.ttf?a);
+}
+
+.msg, .msg > span > span > b, .msg i:first-of-type, .chat-input, .chat-input .prefix, .chat-input .prefix.any:before, .chat-input .prefix.any:after, textarea, input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-shadow: inherit;
+    line-height: 0.8;
+    font-weight: inherit;
+    pointer-events: none;
+}
+
+.chat-messages {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+.chat-messages::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-input > div {
+    background-color: rgba(30, 30, 30, 0.7) !important;
+    border: calc(0.12vh / 2) solid #000000ce;
+    outline: calc(0.12vh / 2) solid #000000ce;
+    padding: calc(0.1vh / 2);
+    border-radius: 5px;
+    filter: url(#svgDropShadowFilter);
+    pointer-events: none;
+}
+
+.chat-input .prefix {
+    margin: 0;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
+    margin-top: -0.1%;
+    line-height: 0.8;
+    pointer-events: none;
+}
+
+.chat-input .prefix.any {
+    opacity: 0.8;
+}
+
+.suggestions {
+    background: transparent;
+    pointer-events: none;
+}
+
+textarea:focus, input:focus {
+    cursor: default;
+    pointer-events: none;
+}
